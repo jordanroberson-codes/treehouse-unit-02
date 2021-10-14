@@ -95,6 +95,11 @@ footer h3 {
   margin-top: 0px;
 }
 
+.introduction {
+  font-size: 1.6em;
+  font-weight: 100;
+}
+
 .return-top {
   float: right;
 }
@@ -125,5 +130,26 @@ footer h3 {
   }
   .main-nav a {
     background-color: rgb(247, 247, 247);
+  }
+
+  .profile-pic-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .introduction {
+    text-align: left;
+    font-weight: 100;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    justify-content: flex-end;
   }
 }
