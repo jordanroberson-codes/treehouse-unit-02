@@ -141,9 +141,26 @@ footer h3 {
     text-align: left;
     font-weight: 100;
   }
+  .portfolio-wrapper ul {
+    align-items: initial;
+  }
+
+  .portfolio-wrapper li {
+    flex: initial;
+    flex-basis: 50%;
+  }
+
+  .portfolio-wrapper li img {
+    width: initial;
+    max-width: 95%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  html {
+    max-width: 1024px;
+  }
+
   header {
     display: flex;
     align-items: flex-start;
