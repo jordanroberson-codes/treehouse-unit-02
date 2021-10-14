@@ -160,13 +160,26 @@ footer h3 {
   html {
     max-width: 1024px;
   }
-
-  header {
+  .nav-title {
+    max-width: 1024px;
     display: flex;
-    align-items: flex-start;
+  }
+
+  .main-header {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
   }
 
   .main-nav {
     justify-content: flex-end;
+  }
+  .portfolio-wrapper ul {
+    justify-content: center;
+  }
+
+  .portfolio-wrapper li {
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
   }
 }
