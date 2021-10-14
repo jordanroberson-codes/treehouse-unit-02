@@ -1,0 +1,128 @@
+/*====================================================================
+      BASE 
+=====================================================================*/
+
+:root {
+  --main-font: "Source Sans Pro", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--main-font);
+  background-color: rgb(247, 247, 247);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+img {
+  display: block;
+  width: 90vw;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+li {
+  align-items: center;
+  text-align: center;
+}
+
+h3,
+p {
+  text-align: center;
+  margin: 25px;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+/*====================================================================
+          NAV BAR 
+=====================================================================*/
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+/*====================================================================
+          MAIN BODY
+=====================================================================*/
+.portfolio-wrapper {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  float: left;
+  margin-top: 0px;
+}
+
+.return-top {
+  float: right;
+}
+
+.footer-nav {
+  float: right;
+}
+
+/*====================================================================
+    MEDIA QUERIES
+=====================================================================*/
+
+@media screen and (max-width: 768px) {
+  .footer-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .return-top {
+    display: none;
+  }
+  .main-nav {
+    flex-direction: row;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-nav a {
+    background-color: rgb(247, 247, 247);
+  }
+}
