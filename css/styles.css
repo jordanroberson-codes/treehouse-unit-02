@@ -110,6 +110,7 @@ footer h3 {
   flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 2px 2px 5px darkslategrey;
+  margin-top: 40px;
 }
 
 .name {
@@ -127,7 +128,7 @@ footer h3 {
 }
 
 .intro-wrap {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .profile-pic {
@@ -139,6 +140,14 @@ footer h3 {
 
 .profile-pic:hover {
   transform: scale(1.2) rotate(360deg);
+}
+.skills-wrapper {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: -2px 2px 5px darkslategrey;
+  margin-top: 40px;
 }
 
 .return-top {
@@ -199,6 +208,10 @@ footer h3 {
     text-decoration: none;
     color: black;
   }
+
+  .skills-wrapper li img {
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -250,6 +263,22 @@ footer h3 {
     width: initial;
     max-width: 95%;
   }
+
+  .skills-wrapper ul {
+    align-items: initial;
+    justify-content: center;
+  }
+
+  .skills-wrapper li {
+    flex: initial;
+    flex-basis: 50%;
+  }
+
+  .skills-wrapper li img {
+    width: initial;
+    max-width: 95%;
+  }
+
   .info-wrap {
     max-width: 595px;
     margin: 0 auto;
@@ -287,6 +316,16 @@ footer h3 {
   }
 
   .portfolio-wrapper li {
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-wrapper ul {
+    justify-content: center;
+  }
+
+  .skills-wrapper li {
     flex-basis: 30%;
     align-items: center;
     justify-content: center;
