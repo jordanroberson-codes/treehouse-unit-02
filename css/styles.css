@@ -4,6 +4,7 @@
 
 :root {
   --main-font: "Source Sans Pro", sans-serif;
+  --secondary-font: "JetBrains Mono", monospace;
 }
 
 * {
@@ -51,6 +52,7 @@ h3 {
 
 p {
   font-weight: 200;
+  font-family: var(--secondary-font);
 }
 
 img {
@@ -90,6 +92,7 @@ footer h3 {
   align-items: stretch;
   justify-content: center;
   text-transform: uppercase;
+  margin-left: 10px;
 }
 
 .main-nav a {
@@ -135,6 +138,7 @@ footer h3 {
   width: 280px;
   border-radius: 50%;
   transition: all 0.5s;
+  margin-bottom: 30px;
   border: 10px solid #fff;
 }
 
@@ -150,6 +154,14 @@ footer h3 {
   margin-top: 40px;
 }
 
+.skills-icon-list li img {
+  transition: all 150ms ease-in-out;
+}
+
+.skills-icon-list li img:hover {
+  transform: rotate(45deg);
+}
+
 .return-top {
   float: right;
 }
@@ -158,13 +170,18 @@ footer h3 {
   float: right;
 }
 
+.footer-wrap h2 {
+  color: white;
+}
+
 .footer-wrap p {
   font-size: 1.4em;
+  color: white;
 }
 
 .footer-nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   text-transform: uppercase;
   padding-right: 5px;
 }
@@ -220,7 +237,7 @@ footer h3 {
   }
   .main-nav {
     flex-direction: row;
-    background-color: none;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
