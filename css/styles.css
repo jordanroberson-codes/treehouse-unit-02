@@ -12,7 +12,7 @@
 
 html {
   font-family: var(--main-font);
-  background-color: rgb(247, 247, 247);
+  background-color: #3ac0c8;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -22,12 +22,37 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 3.5em;
 }
 
 h2 {
   text-align: center;
   text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 20px;
 }
+
+h3,
+p {
+  text-align: center;
+  margin: 25px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 200;
+}
+
 img {
   display: block;
   width: 90vw;
@@ -51,12 +76,6 @@ li {
   flex: 1 50%;
 }
 
-h3,
-p {
-  text-align: center;
-  margin: 25px;
-}
-
 footer h3 {
   text-align: center;
 }
@@ -70,6 +89,7 @@ footer h3 {
   width: 90vw;
   align-items: stretch;
   justify-content: center;
+  text-transform: uppercase;
 }
 
 .main-nav a {
@@ -88,16 +108,37 @@ footer h3 {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px darkslategrey;
 }
 
 .name {
   float: left;
   margin-top: 0px;
+  font-size: 1em !important;
+  font-weight: 500;
+  margin-left: 10px;
 }
 
 .introduction {
   font-size: 1.6em;
-  font-weight: 100;
+  color: white;
+  font-weight: 500;
+}
+
+.intro-wrap {
+  margin-top: 40px;
+}
+
+.profile-pic {
+  width: 280px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  border: 10px solid #fff;
+}
+
+.profile-pic:hover {
+  transform: scale(1.2) rotate(360deg);
 }
 
 .return-top {
@@ -108,6 +149,43 @@ footer h3 {
   float: right;
 }
 
+.footer-wrap p {
+  font-size: 1.4em;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding-right: 5px;
+}
+
+.icons {
+  text-align: center;
+  font-size: 3em;
+}
+
+.icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: black;
+}
+
+.email {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.email:hover {
+  color: black;
+  font-weight: 600;
+}
+
 /*====================================================================
     MEDIA QUERIES
 =====================================================================*/
@@ -115,6 +193,11 @@ footer h3 {
 @media screen and (max-width: 768px) {
   .footer-nav {
     display: none;
+  }
+
+  .return-top {
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -127,9 +210,17 @@ footer h3 {
     background-color: none;
     justify-content: center;
     align-items: center;
+    font-size: 1.4em;
   }
   .main-nav a {
-    background-color: rgb(247, 247, 247);
+    background-color: transparent;
+    color: white;
+    transition: all 150ms ease-in-out;
+  }
+
+  .main-nav a:hover {
+    text-shadow: 1px 1px black;
+    transform: scale(1.2);
   }
 
   .profile-pic-wrapper {
@@ -137,9 +228,14 @@ footer h3 {
     flex-direction: row-reverse;
   }
 
+  .profile-pic {
+    margin-right: 50px;
+  }
+
   .introduction {
     text-align: left;
-    font-weight: 100;
+    font-weight: 500;
+    margin-top: 70px;
   }
   .portfolio-wrapper ul {
     align-items: initial;
@@ -154,25 +250,38 @@ footer h3 {
     width: initial;
     max-width: 95%;
   }
+  .info-wrap {
+    max-width: 595px;
+    margin: 0 auto;
+  }
+
+  .intro-wrap {
+    max-width: 700px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   html {
     max-width: 1024px;
   }
+
+  header {
+    align-items: initial;
+  }
   .nav-title {
-    max-width: 1024px;
     display: flex;
+    justify-content: space-between;
   }
 
   .main-header {
     justify-content: flex-start;
-    flex-wrap: nowrap;
   }
 
   .main-nav {
+    width: initial;
     justify-content: flex-end;
   }
+
   .portfolio-wrapper ul {
     justify-content: center;
   }

@@ -15,6 +15,14 @@
 
     <!-- End of google fonts -->
 
+    <!-- FONT-AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/0d8577ba8e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- END OF FONTAWESOME -->
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio</title>
   </head>
@@ -24,26 +32,31 @@
         <h1 class="main-header">Jordan Roberson</h1>
         <nav class="main-nav">
           <a href="#">Home</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact </a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact </a>
         </nav>
       </div>
       <div class="profile-pic-wrapper">
-        <img
-          class="profile-pic"
-          src="images/responsive-layout-profile.png"
-          alt="profile picture"
-        />
-        <p class="introduction">
-          Hi! I am a front-end web developer who loves responsive design and
-          css. I recently finished a degree in front-end web development at
-          Treehouse and am excited to put all my skills to use!
-        </p>
+        <div class="pic-wrap">
+          <img
+            class="profile-pic"
+            src="images/newme.JPG"
+            alt="profile picture"
+          />
+        </div>
+        <div class="intro-wrap">
+          <p class="introduction">
+            Hi there! My name is Jordan and I am a front-end web developer. I
+            build websites and dreams. I recently finished a degree in Front-End
+            Web Development at TeamTreehouse and I am excited to put all my
+            skills to use!
+          </p>
+        </div>
       </div>
     </header>
     <main>
-      <h2>Portfolio</h2>
-      <div class="portfolio-wrapper">
+      <div id="portfolio" class="portfolio-wrapper">
+        <h2>Portfolio</h2>
         <ul>
           <li>
             <img
@@ -100,22 +113,36 @@
       </div>
     </main>
     <footer>
-      <div class="footer-wrap">
-        <h3>Contact</h3>
-        <p>
-          If you're interested in chatting or want more informaiton about what
-          I've been working on, I'd love to hear from you!
-        </p>
-        <br />
-        <p>Phone: +1 (111) 555-1234</p>
-        <p>Email: email@yoursite.com</p>
+      <div id="contact" class="footer-wrap">
+        <h2>Contact</h2>
+        <div class="info-wrap">
+          <p>
+            If you're interested in chatting or want more information about what
+            I've been working on, I'd love to hear from you!
+          </p>
+          <p>
+            <a
+              class="email"
+              href="mailto:JordanRobersonCodes@gmail.com?subject=Hey! Let's Collaborate!"
+              >Email Me</a
+            >
+          </p>
+          <div class="icons">
+            <a href="https://github.com/jordanroberson-codes" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/jordanrobersonnp/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
         <hr />
-        <p class="name">Jordan Roberson</p>
+        <p class="name">JORDAN ROBERSON</p>
         <a class="return-top" href="#">BACK TO TOP</a>
         <nav class="footer-nav">
           <a href="#">Home</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact </a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact </a>
         </nav>
       </div>
     </footer>
