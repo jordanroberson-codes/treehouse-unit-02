@@ -117,11 +117,10 @@ footer h3 {
 }
 
 .name {
-  float: left;
   margin-top: 0px;
   font-size: 1em !important;
   font-weight: 500;
-  margin-left: 10px;
+  justify-content: flex-start;
 }
 
 .introduction {
@@ -163,11 +162,16 @@ footer h3 {
 }
 
 .return-top {
-  float: right;
+  justify-content: flex-end;
 }
 
 .footer-nav {
-  float: right;
+  justify-content: flex-end;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-wrap h2 {
@@ -177,6 +181,11 @@ footer h3 {
 .footer-wrap p {
   font-size: 1.4em;
   color: white;
+}
+
+.footer-nav-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-nav a {
@@ -212,29 +221,32 @@ footer h3 {
   font-weight: 600;
 }
 
+.footer-nav {
+  display: none;
+}
+
+.return-top {
+  text-decoration: none;
+  color: black;
+}
+
+.skills-wrapper li img {
+  width: 200px;
+}
 /*====================================================================
     MEDIA QUERIES
 =====================================================================*/
-
-@media screen and (max-width: 768px) {
-  .footer-nav {
-    display: none;
-  }
-
-  .return-top {
-    text-decoration: none;
-    color: black;
-  }
-
-  .skills-wrapper li img {
-    width: 200px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .return-top {
     display: none;
   }
+
+  .footer-nav {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
   .main-nav {
     flex-direction: row;
     background-color: transparent;
@@ -294,7 +306,6 @@ footer h3 {
   .skills-wrapper li img {
     width: initial;
     max-width: 95%;
-    margin-bottom: -50px;
   }
 
   .info-wrap {
