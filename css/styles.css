@@ -277,6 +277,7 @@ footer h3 {
   .skills-wrapper li img {
     width: initial;
     max-width: 95%;
+    margin-bottom: -50px;
   }
 
   .info-wrap {
